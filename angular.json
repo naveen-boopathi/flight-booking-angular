@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "FB-UI-NEW": {
+    "fly-high": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/FB-UI-NEW",
+            "outputPath": "dist/fly-high",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "FB-UI-NEW:build"
+            "browserTarget": "fly-high:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "FB-UI-NEW:build:production"
+              "browserTarget": "fly-high:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "FB-UI-NEW:build"
+            "browserTarget": "fly-high:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "FB-UI-NEW-e2e": {
+    "fly-high-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "FB-UI-NEW:serve"
+            "devServerTarget": "fly-high:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "FB-UI-NEW:serve:production"
+              "devServerTarget": "fly-high:serve:production"
             }
           }
         },
@@ -123,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "FB-UI-NEW"
+  "defaultProject": "fly-high"
 }
